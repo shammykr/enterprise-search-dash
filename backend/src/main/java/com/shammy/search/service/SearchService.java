@@ -25,7 +25,9 @@ import co.elastic.clients.elasticsearch._types.query_dsl.Query;
 import co.elastic.clients.elasticsearch._types.query_dsl.TextQueryType;
 import co.elastic.clients.elasticsearch.core.SearchResponse;
 import co.elastic.clients.elasticsearch.core.search.CompletionSuggestOption;
+import co.elastic.clients.elasticsearch.core.search.HighlighterEncoder;
 import co.elastic.clients.elasticsearch.core.search.Hit;
+import org.springframework.web.util.HtmlUtils;
 import co.elastic.clients.json.JsonData;
 
 /**
@@ -66,6 +68,7 @@ public class SearchService {
                     .size(p.size())
                     .trackTotalHits(t -> t.enabled(true))
                     .highlight(h -> h
+                            .encoder(HighlighterEncoder.Html)
                             .preTags("<mark>").postTags("</mark>")
                             .fields("content", f -> f.fragmentSize(160).numberOfFragments(1))
                             .fields("title", f -> f.numberOfFragments(0)))
@@ -178,9 +181,12 @@ public class SearchService {
     private static SearchResult.Hit toHit(Hit<ObjectNode> hit) {
         ObjectNode src = hit.source();
         Map<String, List<String>> hl = hit.highlight();
-        String title = firstOr(hl.get("title"), text(src, "title"));
+        // Highlights are HTML-encoded by Elasticsearch; escape the plain fallbacks the same way
+        // so the UI can always render title/snippet as HTML.
+        String title = firstOr(hl.get("title"), HtmlUtils.htmlEscape(text(src, "title")));
         String content = text(src, "content");
-        String snippet = firstOr(hl.get("content"), content.length() > 200 ? content.substring(0, 200) + "…" : content);
+        String plain = content.length() > 200 ? content.substring(0, 200) + "…" : content;
+        String snippet = firstOr(hl.get("content"), HtmlUtils.htmlEscape(plain));
 
         List<String> tags = new ArrayList<>();
         JsonNode tagNode = src.get("tags");
