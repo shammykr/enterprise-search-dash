@@ -38,8 +38,10 @@ import { SearchApiService } from '../../../core/search-api.service';
     </form>
   `,
   styles: `
+    :host { display: block; }
     .bar { display: flex; gap: 12px; align-items: center; }
-    .field { flex: 1; }
+    .field { flex: 1; min-width: 0; }
+    .field ::ng-deep .mat-mdc-form-field-infix { width: auto; }
   `,
 })
 export class SearchBarComponent {

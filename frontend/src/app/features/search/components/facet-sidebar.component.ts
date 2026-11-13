@@ -65,6 +65,8 @@ import { fromIsoDate, toIsoDate } from '../search-query';
     </mat-card>
   `,
   styles: `
+    :host { display: block; min-width: 0; }
+    .dates ::ng-deep .mat-mdc-form-field-infix { width: auto; }
     mat-card-header { align-items: center; justify-content: space-between; }
     .clear { margin-left: auto; }
     h3 { margin: 16px 0 4px; font-size: 14px; font-weight: 500; }

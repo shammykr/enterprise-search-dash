@@ -52,7 +52,8 @@ import { SearchResult } from '../../../core/models';
   `,
   styles: `
     .summary { margin: 0 0 12px; color: var(--mat-sys-on-surface-variant); }
-    .took { font-size: 12px; }
+    :host { display: block; min-width: 0; }
+    .took { font-size: 12px; margin-left: 4px; }
     .hit { margin-bottom: 12px; }
     .hit a { color: var(--mat-sys-primary); text-decoration: none; }
     .hit a:hover { text-decoration: underline; }
