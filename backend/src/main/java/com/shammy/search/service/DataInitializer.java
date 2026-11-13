@@ -54,8 +54,11 @@ public class DataInitializer implements ApplicationRunner {
         }
 
         long stored = repository.count();
-        if (indexService.count() != stored) {
-            log.info("Index out of sync with MongoDB ({} docs), reindexing", stored);
+        long indexed = indexService.count();
+        if (indexed == 0 && stored > 0) {
+            indexService.bulkIndex(repository.findAll());
+        } else if (indexed != stored) {
+            log.info("Index out of sync with MongoDB ({} vs {} docs), rebuilding", indexed, stored);
             indexService.rebuild(repository.findAll());
         }
     }
