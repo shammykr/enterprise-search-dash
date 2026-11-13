@@ -1,0 +1,569 @@
+[
+  {
+    "title": "Kubernetes Rollout Guide for Production Services",
+    "content": "Step-by-step process for rolling out containerized services to the production Kubernetes cluster, including canary deployments, readiness probes, resource limits and rollback procedures.",
+    "category": "Engineering",
+    "tags": [
+      "kubernetes",
+      "deployment",
+      "devops"
+    ],
+    "author": "Elena Rossi",
+    "createdAt": "2024-11-30T20:14:02Z"
+  },
+  {
+    "title": "Microservice API Design Standards",
+    "content": "Conventions for designing REST APIs across teams: resource naming, versioning in the URL path, pagination with page and size parameters, error payload format and idempotent PUT semantics.",
+    "category": "Engineering",
+    "tags": [
+      "api",
+      "rest",
+      "architecture"
+    ],
+    "author": "Priya Nair",
+    "createdAt": "2025-02-12T05:56:23Z"
+  },
+  {
+    "title": "Java 17 Migration Checklist",
+    "content": "Checklist for upgrading services from Java 11 to Java 17: records, sealed classes, removed JVM flags, updated garbage collector defaults and dependency compatibility checks.",
+    "category": "Engineering",
+    "tags": [
+      "java",
+      "migration",
+      "jvm"
+    ],
+    "author": "Marcus Chen",
+    "createdAt": "2024-03-15T21:34:44Z"
+  },
+  {
+    "title": "Elasticsearch Index Mapping Best Practices",
+    "content": "Guidance on explicit mappings, keyword versus text fields, analyzers, shard sizing, and how to use aggregations efficiently for faceted search in Elasticsearch.",
+    "category": "Engineering",
+    "tags": [
+      "elasticsearch",
+      "search",
+      "performance"
+    ],
+    "author": "Priya Nair",
+    "createdAt": "2025-01-13T02:56:10Z"
+  },
+  {
+    "title": "MongoDB Schema Design Patterns",
+    "content": "Embedding versus referencing, the bucket pattern for time series data, indexing compound fields and avoiding unbounded arrays in MongoDB document models.",
+    "category": "Engineering",
+    "tags": [
+      "mongodb",
+      "database",
+      "architecture"
+    ],
+    "author": "David Okafor",
+    "createdAt": "2026-07-29T15:12:57Z"
+  },
+  {
+    "title": "CI/CD Pipeline Overview",
+    "content": "How code moves from pull request to production: build, static analysis, container image publishing, staging deployment and automated promotion to production.",
+    "category": "Engineering",
+    "tags": [
+      "devops",
+      "ci",
+      "deployment"
+    ],
+    "author": "Aisha Rahman",
+    "createdAt": "2024-02-08T18:29:32Z"
+  },
+  {
+    "title": "Angular Frontend Coding Guidelines",
+    "content": "Standards for Angular applications: standalone components, lazy-loaded routes, reactive forms, RxJS usage, state handling and Angular Material theming.",
+    "category": "Engineering",
+    "tags": [
+      "angular",
+      "frontend",
+      "typescript"
+    ],
+    "author": "David Okafor",
+    "createdAt": "2025-03-08T09:21:36Z"
+  },
+  {
+    "title": "Incident Postmortem: Search Latency Spike",
+    "content": "Root cause analysis of a search latency spike caused by a hot shard and an expensive wildcard query. Action items include query validation and shard rebalancing.",
+    "category": "Engineering",
+    "tags": [
+      "incident",
+      "elasticsearch",
+      "performance"
+    ],
+    "author": "Aisha Rahman",
+    "createdAt": "2024-04-03T19:08:02Z"
+  },
+  {
+    "title": "Observability Stack: Logs, Metrics and Traces",
+    "content": "Overview of centralized logging, Prometheus metrics, distributed tracing and alerting conventions used by all backend services.",
+    "category": "Engineering",
+    "tags": [
+      "observability",
+      "monitoring",
+      "devops"
+    ],
+    "author": "Marcus Chen",
+    "createdAt": "2024-03-02T02:53:10Z"
+  },
+  {
+    "title": "Caching Strategy for Read-Heavy Services",
+    "content": "When to use in-process caches versus a distributed cache, TTL selection, cache invalidation on writes and protecting downstream services from stampedes.",
+    "category": "Engineering",
+    "tags": [
+      "performance",
+      "caching",
+      "architecture"
+    ],
+    "author": "Priya Nair",
+    "createdAt": "2026-09-06T15:54:42Z"
+  },
+  {
+    "title": "Password and Credential Management Policy",
+    "content": "Requirements for password length, rotation of service credentials, use of the secrets vault and prohibition on storing secrets in source control.",
+    "category": "Security",
+    "tags": [
+      "security",
+      "policy",
+      "credentials"
+    ],
+    "author": "Aisha Rahman",
+    "createdAt": "2025-08-19T17:23:12Z"
+  },
+  {
+    "title": "Quarterly Access Review Procedure",
+    "content": "Managers review user access to production systems each quarter, revoke stale permissions and record approvals for audit evidence.",
+    "category": "Security",
+    "tags": [
+      "security",
+      "compliance",
+      "access-control"
+    ],
+    "author": "David Okafor",
+    "createdAt": "2024-02-21T06:36:30Z"
+  },
+  {
+    "title": "Vulnerability Management Process",
+    "content": "Severity levels, remediation SLAs, dependency scanning in CI and the exception process for vulnerabilities that cannot be patched immediately.",
+    "category": "Security",
+    "tags": [
+      "security",
+      "vulnerability",
+      "compliance"
+    ],
+    "author": "Elena Rossi",
+    "createdAt": "2024-02-18T03:59:44Z"
+  },
+  {
+    "title": "Phishing Awareness Training Notes",
+    "content": "Common phishing indicators, how to report suspicious emails, and results from the latest simulated phishing campaign.",
+    "category": "Security",
+    "tags": [
+      "security",
+      "training"
+    ],
+    "author": "Elena Rossi",
+    "createdAt": "2024-10-26T10:56:38Z"
+  },
+  {
+    "title": "Data Classification Standard",
+    "content": "Definitions of public, internal, confidential and restricted data, with handling rules for storage, sharing and encryption at rest.",
+    "category": "Security",
+    "tags": [
+      "security",
+      "data",
+      "policy"
+    ],
+    "author": "Sara Lindqvist",
+    "createdAt": "2025-07-13T01:39:39Z"
+  },
+  {
+    "title": "Employee Onboarding Handbook",
+    "content": "Everything a new hire needs in the first two weeks: equipment setup, required trainings, benefits enrollment, and introductions to team rituals.",
+    "category": "HR",
+    "tags": [
+      "onboarding",
+      "policy",
+      "benefits"
+    ],
+    "author": "Elena Rossi",
+    "createdAt": "2025-08-02T07:20:40Z"
+  },
+  {
+    "title": "Remote Work Policy",
+    "content": "Eligibility for remote and hybrid work, expectations for core hours, home office stipend and security requirements for working outside the office.",
+    "category": "HR",
+    "tags": [
+      "policy",
+      "remote-work"
+    ],
+    "author": "David Okafor",
+    "createdAt": "2024-04-16T13:25:50Z"
+  },
+  {
+    "title": "Performance Review Cycle Guide",
+    "content": "Timeline of the annual performance review, self-assessment template, calibration process and how ratings connect to compensation.",
+    "category": "HR",
+    "tags": [
+      "performance-review",
+      "career"
+    ],
+    "author": "Marcus Chen",
+    "createdAt": "2025-01-20T01:25:02Z"
+  },
+  {
+    "title": "Parental Leave Benefits",
+    "content": "Paid parental leave duration, eligibility, how to notify your manager and plan a phased return to work.",
+    "category": "HR",
+    "tags": [
+      "benefits",
+      "leave",
+      "policy"
+    ],
+    "author": "David Okafor",
+    "createdAt": "2025-08-06T13:21:48Z"
+  },
+  {
+    "title": "Career Ladder for Software Engineers",
+    "content": "Expectations at each engineering level covering technical scope, ownership, mentorship and cross-team impact.",
+    "category": "HR",
+    "tags": [
+      "career",
+      "engineering",
+      "performance-review"
+    ],
+    "author": "Aisha Rahman",
+    "createdAt": "2025-05-28T07:01:19Z"
+  },
+  {
+    "title": "Travel and Expense Reimbursement Policy",
+    "content": "Allowed travel expenses, per diem rates, receipt requirements and the approval workflow for submitting expense reports.",
+    "category": "Finance",
+    "tags": [
+      "expenses",
+      "travel",
+      "policy"
+    ],
+    "author": "Jordan Lee",
+    "createdAt": "2026-03-14T15:42:33Z"
+  },
+  {
+    "title": "FY2026 Budget Planning Timeline",
+    "content": "Key dates for the annual budget planning cycle, headcount requests, capital expenditure submissions and final approval by leadership.",
+    "category": "Finance",
+    "tags": [
+      "budget",
+      "planning"
+    ],
+    "author": "Jordan Lee",
+    "createdAt": "2025-08-28T11:18:11Z"
+  },
+  {
+    "title": "Procurement and Vendor Onboarding",
+    "content": "How to request a new vendor, security and legal review steps, purchase order thresholds and invoice processing.",
+    "category": "Finance",
+    "tags": [
+      "procurement",
+      "vendors",
+      "policy"
+    ],
+    "author": "David Okafor",
+    "createdAt": "2025-01-08T21:01:39Z"
+  },
+  {
+    "title": "Quarterly Revenue Report Q2",
+    "content": "Summary of second quarter revenue by region and product line, gross margin trends and commentary on the sales pipeline.",
+    "category": "Finance",
+    "tags": [
+      "revenue",
+      "report"
+    ],
+    "author": "David Okafor",
+    "createdAt": "2026-04-01T09:19:16Z"
+  },
+  {
+    "title": "Cloud Cost Optimization Review",
+    "content": "Analysis of cloud spend by team, rightsizing recommendations, reserved instance coverage and savings from shutting down idle environments.",
+    "category": "Finance",
+    "tags": [
+      "cloud",
+      "budget",
+      "performance"
+    ],
+    "author": "Sara Lindqvist",
+    "createdAt": "2024-03-25T15:18:50Z"
+  },
+  {
+    "title": "Standard Customer Contract Template",
+    "content": "Master services agreement template covering service levels, liability caps, data processing terms and renewal clauses.",
+    "category": "Legal",
+    "tags": [
+      "contracts",
+      "customers"
+    ],
+    "author": "Tom Becker",
+    "createdAt": "2025-06-27T01:16:35Z"
+  },
+  {
+    "title": "GDPR Data Subject Request Procedure",
+    "content": "How to verify identity, locate personal data across systems and respond to access and deletion requests within the statutory deadline.",
+    "category": "Legal",
+    "tags": [
+      "privacy",
+      "gdpr",
+      "compliance"
+    ],
+    "author": "Sara Lindqvist",
+    "createdAt": "2026-01-24T05:54:51Z"
+  },
+  {
+    "title": "Open Source License Compliance",
+    "content": "Approved and restricted open source licenses, attribution requirements and the review process for new third-party dependencies.",
+    "category": "Legal",
+    "tags": [
+      "open-source",
+      "licensing",
+      "compliance"
+    ],
+    "author": "Marcus Chen",
+    "createdAt": "2025-09-21T15:55:37Z"
+  },
+  {
+    "title": "Records Retention Schedule",
+    "content": "Retention periods for financial records, contracts, HR files and logs, and the process for legal holds.",
+    "category": "Legal",
+    "tags": [
+      "records",
+      "compliance",
+      "policy"
+    ],
+    "author": "Aisha Rahman",
+    "createdAt": "2024-05-02T01:55:13Z"
+  },
+  {
+    "title": "Enterprise Sales Playbook",
+    "content": "Qualification framework, discovery questions, mapping stakeholders in large accounts and handling security questionnaires during enterprise deals.",
+    "category": "Sales",
+    "tags": [
+      "sales",
+      "playbook",
+      "customers"
+    ],
+    "author": "Tom Becker",
+    "createdAt": "2024-06-19T13:41:58Z"
+  },
+  {
+    "title": "Pricing and Discount Approval Matrix",
+    "content": "Discount levels each role can approve, multi-year deal incentives and the escalation path for non-standard pricing.",
+    "category": "Sales",
+    "tags": [
+      "pricing",
+      "sales",
+      "approvals"
+    ],
+    "author": "Jordan Lee",
+    "createdAt": "2024-06-06T03:38:53Z"
+  },
+  {
+    "title": "Competitive Battlecard: Search Platforms",
+    "content": "Positioning against competing enterprise search platforms: strengths, weaknesses, common objections and proof points.",
+    "category": "Sales",
+    "tags": [
+      "competitors",
+      "search",
+      "sales"
+    ],
+    "author": "Marcus Chen",
+    "createdAt": "2025-03-12T00:51:58Z"
+  },
+  {
+    "title": "Customer Renewal Forecast Process",
+    "content": "How account managers forecast renewals, flag churn risks and coordinate with customer success on expansion opportunities.",
+    "category": "Sales",
+    "tags": [
+      "renewals",
+      "forecast",
+      "customers"
+    ],
+    "author": "Tom Becker",
+    "createdAt": "2026-03-01T13:35:26Z"
+  },
+  {
+    "title": "Search Relevance Roadmap",
+    "content": "Planned improvements to search relevance: synonym handling, typo tolerance, boosting recent documents and click-based ranking signals.",
+    "category": "Product",
+    "tags": [
+      "search",
+      "roadmap",
+      "relevance"
+    ],
+    "author": "Tom Becker",
+    "createdAt": "2024-12-17T16:28:35Z"
+  },
+  {
+    "title": "Product Requirements: Faceted Navigation",
+    "content": "Requirements for faceted navigation in the search dashboard: category and tag filters with counts, date range filtering and multi-select behaviour.",
+    "category": "Product",
+    "tags": [
+      "search",
+      "requirements",
+      "ux"
+    ],
+    "author": "Jordan Lee",
+    "createdAt": "2025-09-06T13:52:58Z"
+  },
+  {
+    "title": "Customer Feedback Synthesis Q3",
+    "content": "Themes from customer interviews and support tickets, including requests for better auto-complete and saved searches.",
+    "category": "Product",
+    "tags": [
+      "feedback",
+      "research",
+      "customers"
+    ],
+    "author": "Marcus Chen",
+    "createdAt": "2024-03-12T02:25:16Z"
+  },
+  {
+    "title": "Accessibility Guidelines for Web Apps",
+    "content": "Keyboard navigation, color contrast, ARIA labels and screen reader testing requirements for all customer-facing web applications.",
+    "category": "Product",
+    "tags": [
+      "accessibility",
+      "ux",
+      "frontend"
+    ],
+    "author": "Jordan Lee",
+    "createdAt": "2026-09-03T19:12:21Z"
+  },
+  {
+    "title": "Business Continuity Plan",
+    "content": "Critical business functions, recovery time objectives, communication plans and roles during a major outage or office closure.",
+    "category": "Operations",
+    "tags": [
+      "continuity",
+      "disaster-recovery",
+      "policy"
+    ],
+    "author": "Marcus Chen",
+    "createdAt": "2025-12-21T17:47:45Z"
+  },
+  {
+    "title": "Database Backup and Restore Runbook",
+    "content": "Daily snapshot schedule, point-in-time recovery steps for MongoDB clusters and quarterly restore drills.",
+    "category": "Operations",
+    "tags": [
+      "backup",
+      "mongodb",
+      "disaster-recovery"
+    ],
+    "author": "Sara Lindqvist",
+    "createdAt": "2024-03-03T17:34:21Z"
+  },
+  {
+    "title": "On-Call Rotation and Escalation Policy",
+    "content": "On-call schedules, paging escalation tiers, response time expectations and compensation for after-hours incidents.",
+    "category": "Operations",
+    "tags": [
+      "on-call",
+      "incident",
+      "policy"
+    ],
+    "author": "Jordan Lee",
+    "createdAt": "2025-10-31T03:08:58Z"
+  },
+  {
+    "title": "Office Facilities and Equipment Requests",
+    "content": "How to request desks, monitors and meeting room equipment, and the process for reporting facilities issues.",
+    "category": "Operations",
+    "tags": [
+      "facilities",
+      "equipment"
+    ],
+    "author": "Aisha Rahman",
+    "createdAt": "2024-10-21T06:31:21Z"
+  },
+  {
+    "title": "Search Autocomplete Implementation Notes",
+    "content": "Design notes on completion suggesters, debouncing keystrokes in the UI, fuzzy prefix matching and limiting the number of suggestions.",
+    "category": "Engineering",
+    "tags": [
+      "search",
+      "elasticsearch",
+      "frontend"
+    ],
+    "author": "Tom Becker",
+    "createdAt": "2026-07-06T04:47:30Z"
+  },
+  {
+    "title": "Docker Compose Local Development Setup",
+    "content": "Running the full stack locally with Docker Compose: service dependencies, health checks, volumes and environment variables.",
+    "category": "Engineering",
+    "tags": [
+      "docker",
+      "devops",
+      "onboarding"
+    ],
+    "author": "Jordan Lee",
+    "createdAt": "2024-01-24T07:55:17Z"
+  },
+  {
+    "title": "Incident Response Plan",
+    "content": "Phases of security incident response from detection to post-incident review, roles of the response team and customer notification rules.",
+    "category": "Security",
+    "tags": [
+      "security",
+      "incident",
+      "policy"
+    ],
+    "author": "Marcus Chen",
+    "createdAt": "2025-01-02T13:11:50Z"
+  },
+  {
+    "title": "Payroll Calendar 2026",
+    "content": "Pay dates, payroll cutoff dates for timesheets and holiday adjustments for the 2026 calendar year.",
+    "category": "Finance",
+    "tags": [
+      "payroll",
+      "benefits"
+    ],
+    "author": "David Okafor",
+    "createdAt": "2025-05-25T11:29:07Z"
+  },
+  {
+    "title": "Diversity and Inclusion Annual Report",
+    "content": "Representation metrics, hiring funnel analysis, employee resource group activities and goals for the coming year.",
+    "category": "HR",
+    "tags": [
+      "diversity",
+      "report",
+      "career"
+    ],
+    "author": "Elena Rossi",
+    "createdAt": "2026-03-05T08:28:11Z"
+  },
+  {
+    "title": "Mobile App Release Notes 4.2",
+    "content": "New offline mode, faster document previews, improved search filters and bug fixes in version 4.2 of the mobile app.",
+    "category": "Product",
+    "tags": [
+      "release-notes",
+      "mobile"
+    ],
+    "author": "Aisha Rahman",
+    "createdAt": "2026-02-02T11:13:32Z"
+  },
+  {
+    "title": "Trademark Usage Guidelines",
+    "content": "Rules for using company trademarks and logos in marketing material, partner co-branding and third-party references.",
+    "category": "Legal",
+    "tags": [
+      "trademark",
+      "brand",
+      "policy"
+    ],
+    "author": "Jordan Lee",
+    "createdAt": "2025-02-08T05:48:28Z"
+  }
+]
