@@ -133,8 +133,7 @@ public class SearchIndexService {
 
     /**
      * Completion suggesters match on prefixes, so besides the full title we also index
-     * every word-suffix of it ("kubernetes rollout guide", "rollout guide", ...) plus
-     * the tags. That lets "rollout" complete to the title even though it is mid-sentence.
+     * every word-suffix of it ("kubernetes rollout guide", "rollout guide", ...). That lets "rollout" complete to the title even though it is mid-sentence.
      */
     static List<String> suggestInputs(EnterpriseDocument doc) {
         Set<String> inputs = new LinkedHashSet<>();
@@ -148,7 +147,6 @@ public class SearchIndexService {
                 }
             }
         }
-        inputs.addAll(doc.getTags());
         return new ArrayList<>(inputs);
     }
 }
